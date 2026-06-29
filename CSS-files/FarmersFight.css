@@ -1,0 +1,124 @@
+/* Standard setup */
+.NavigationBarItem {
+    display: block;
+    color: white;
+    float: right;
+    padding: 10px;
+}
+.NavigationText {
+    color: black;
+    font-weight: bold;
+}
+.NavigationBar {
+    position: fixed;
+    bottom: 10px; 
+    padding: 10px;
+    width: fit-content;
+    background-color: white;
+    overflow: hidden;
+    right: 0;
+    padding-right: 10px;
+}
+body {
+    background-image: linear-gradient(to bottom, maroon, grey);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* ---- */
+
+/* Home and Project Blog page */
+.IntroBox{
+    position: absolute;
+    left: 5%;
+}
+.IntroBoxBackground{
+    background-color: rgb(255, 255, 255);
+    width: fit-content;
+    padding: 20px;
+}
+.IntroBoxHead{
+    font-weight: bold;
+    font-size: 50px;
+}
+.IntroBoxText{
+    font-size: 20px;
+}
+/* ---- */
+
+/* About page */
+.Parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1rem;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.PictureChild {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 1;
+    align-self: center;
+    text-align: center;
+}
+.PictureStyle {
+    border: 5px solid white;
+}
+.FunAbout {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    vertical-align: top;
+    grid-row: 1;
+    background-color: white;
+    padding: 10px;
+    align-self: top;
+    font-size: 20px;
+}
+.NotFunAbout {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row: 1;
+    background-color: white;
+    padding: 10px;
+    align-self: top;
+    font-size: 20px;
+}
+.IamBox {
+    background-color: white;
+    width: fit-content;
+    left: 5%;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+/* ---- */
+
+/* Resume Page */
+.ResumeContainer {
+    text-align: center;
+}
+.ResumeStyle {
+    border: 10px solid white;
+}
+/* ---- */
+
+/* Project Blog Page */
+.BlogContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 10%;
+    margin-left: 1%;
+}
+.BlogItem {
+    overflow-y: auto;
+    height: 600px;
+    background-color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+.BlogPhoto {
+    text-align: center;
+}
