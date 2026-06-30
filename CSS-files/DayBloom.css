@@ -23,34 +23,51 @@
 	width: 100%;  /* ADDED */
 }
 body {
-	background-image: url("https://people.tamu.edu/~jemcmillin1/Pictures/Background.jpg");
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-attachment: fixed;
-	background-position: center top;
 	overflow: auto;
-	
-	
+	margin: 0;
 }
+
+.BackgroundImage {
+	width: 100%;
+	background-image: url("https://people.tamu.edu/~jemcmillin1/Pictures/Background.jpg");
+
+}
+
 /* ---- */
 
 /* Home and Project Blog page */
+
+.Hero {
+	background-image: url("https://people.tamu.edu/~jemcmillin1/Pictures/Background.jpg");
+	width: 100%;
+	height: 80vh;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	background-repeat: no-repeat;
+}
+
 .IntroBox {
-		text-align: center;
-		margin-top: 10%;
-	}
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 .IntroBoxBackground {
-	background-color: rgba(255, 255, 3255, 0.5);
+	background-color: rgba(0, 0, 0, 0.5);
 	border-radius: 5px;
 	text-align: center;
 	width: fit-content;
 	margin: 0 auto;
+	display: flex;
+	justify-content: center;
 }
 .IntroBoxHead {
 	font-size: 30px;
 	font-weight: bold;
 }
 .IntroBoxText {
+	color: azure;
 	display: inline-block;
 	text-align: left;
 	padding-left: 5px;
@@ -59,6 +76,26 @@ body {
 	padding-bottom: 10px;
 	padding-top: 5px;
 }
+
+.InfoBoxParent {
+	padding: 1rem;
+	display: flex;
+	justify-content: center;
+	text-align: left;
+}
+
+.InfoBoxParent .table {
+	
+}
+
+.InfoBoxChild-Right {
+	padding: 1rem;
+}
+
+.InfoBoxChild-Left {
+	padding: 1rem;
+}
+
 /* ---- */
 
 /* About page */
