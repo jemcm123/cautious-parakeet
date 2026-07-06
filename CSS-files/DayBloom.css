@@ -81,7 +81,9 @@ body {
 .InfoBoxParent {
 	padding: 1rem;
 	display: flex;
+	flex-direction: row;
 	justify-content: center;
+	align-items: center;
 	text-align: left;
 	font-family:Arial, Helvetica, sans-serif;
 	font-size: larger;
@@ -89,16 +91,30 @@ body {
 }
 
 .InfoBoxChild-Right {
+	margin-left: 0;
 	padding: 1rem;
 }
 
 .InfoBoxChild-Left {
+	text-align: left;
 	padding: 1rem;
+
 }
 
 .InfoBoxChild-Img {
 	width: 20vh;
 	clip-path: circle();
+}
+
+@media (max-width: 720px) {
+	.InfoBoxParent {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.InfoBoxChild-Left {
+		text-align: center;
+	}
 }
 
 /* ---- */
@@ -113,21 +129,23 @@ body {
 	width: 90%;
 	margin-left: 5%;
 	margin-right: 5%;
-	padding: 3vh;
 	background-color: forestgreen;
 	border-radius: 15px;
 	box-shadow: 2px 4px 8px #696969;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	gap: 1.5rem;
+	padding: 2rem;
 }
 
 .PortfolioCard {
-	width: 20vw;
-	height: 30vh;
+	position: relative;
+	aspect-ratio: 3/4;
 	background-color: white;
 	border-radius: 15px;
-	object-fit: contain;
 	overflow: hidden;
-	position: relative;
-	
+	cursor: pointer;
+
 }
 
 .PortfolioImg {
@@ -140,12 +158,12 @@ body {
 
 .PortfolioCardText {
 	position: absolute;
-	text-align: left;
-	bottom: 30px;
+	bottom: 0;
 	left: 0;
 	width: 100%;
-	padding: 2%;
+	padding: 0.5rem;
 	color: white;
+	text-align: center;
 }
 
 /* About page */
