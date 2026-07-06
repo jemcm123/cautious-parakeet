@@ -167,9 +167,9 @@ body {
 	text-align: center;
 }
 
-@media (max-width: 600px){
+@media (max-width: 700px){
 	.PortfolioContainer {
-		grid-template-columns: repeat(1);
+		grid-template-columns: 1;
 	}
 }
 /* About page */
