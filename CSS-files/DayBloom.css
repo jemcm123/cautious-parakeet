@@ -140,13 +140,11 @@ body {
 
 .PortfolioCard {
 	position: relative;
-	aspect-ratio: 3/4;
+	aspect-ratio: 3/5;
 	background-color: white;
 	border-radius: 15px;
 	overflow: hidden;
 	cursor: pointer;
-	flex-shrink: 0;
-
 }
 
 .PortfolioImg {
@@ -167,11 +165,73 @@ body {
 	text-align: center;
 }
 
+/*Portfolio Card Tags*/ 
+
+.PortfolioTag-Green {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	width: 100%;
+	background-color: rgba(50, 255, 50, 0.4);
+	border-radius: 15px;
+	padding: 1%;
+	color: white;
+}
+
+
+
 @media (max-width: 700px){
 	.PortfolioContainer {
 		grid-template-columns: 1;
 	}
 }
+
+/* Project Page */
+
+.CenterContainer {
+	background-color: green;
+	border-radius: 15px;
+	margin: 0 auto;
+	width: 90%;
+	text-align: center;
+}
+
+.ContentTitle {
+	padding-top: 5%;
+	text-align: center;
+	font-size:xxx-large;
+}
+
+.ContentDate {
+	text-align: center;
+	font-size:large;
+}
+
+.ContentMainImg {
+	object-fit: contain;
+	width: 70%;
+	padding-bottom: 1%;
+	border-radius: 15px;
+}
+
+.ContentImg {
+	padding: 1%;
+	object-fit: contain;
+	width: 60%;
+	border-radius: 15px;
+}
+
+.ContentText {
+	text-align: left;
+	margin: 0 auto;
+	width: 90%
+}
+
+
+
+
+
 /* About page */
 .Parent {
 	display: grid;
