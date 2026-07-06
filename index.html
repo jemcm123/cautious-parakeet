@@ -55,5 +55,19 @@
 		</div>
 	</div>
 
+	<div id="debug-width"></div>
+
+	<script>
+		const debugBox = document.getElementById('debug-width');
+		let width = window.innerWidth;
+
+		function updateWidth() {
+			debugBox.textContent = 'Width: ' + width + "px";
+		}
+
+		updateWidth();
+		window.addEventListener('resize', updateWidth);
+	</script>
+
 </body>
 </html>
