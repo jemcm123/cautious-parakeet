@@ -136,7 +136,7 @@ body {
 	width: 90%;
 	margin-left: 5%;
 	margin-right: 5%;
-	background-color: forestgreen;
+	background-color: #55555;
 	border-radius: 15px;
 	box-shadow: 2px 4px 8px #696969;
 	display: grid;
@@ -170,6 +170,8 @@ body {
 	padding: 0.5rem;
 	color: white;
 	text-align: center;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 /*Portfolio Card Tags*/ 
