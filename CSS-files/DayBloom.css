@@ -47,6 +47,12 @@ body {
 	background-repeat: no-repeat;
 }
 
+.TheAllBox {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
 .IntroBox {
 	margin: 0 auto;
 	display: flex;
