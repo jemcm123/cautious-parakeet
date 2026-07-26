@@ -54,6 +54,7 @@ body {
 }
 
 .IntroBox {
+  max-width: 400px;
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
@@ -85,7 +86,6 @@ body {
 }
 
 .InfoBoxParent {
-  max-width: 300px;
 	padding: 1rem;
 	display: flex;
 	flex-direction: row;
