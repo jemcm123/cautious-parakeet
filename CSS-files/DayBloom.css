@@ -190,11 +190,15 @@ body {
 /* Project Page */
 
 .CenterContainer {
-	background-color: green;
-	border-radius: 15px;
-	margin: 0 auto;
-	width: 90%;
 	text-align: center;
+	padding: 128px;
+	overflow: hidden;
+}
+
+.CenterContainer img {
+	aspect-ratio: 1/1;
+	width: 100%;
+	object-fit: cover;
 }
 
 .ContentTitle {
@@ -208,24 +212,19 @@ body {
 	font-size:large;
 }
 
-.ContentMainImg {
-	object-fit: contain;
-	width: 70%;
-	padding-bottom: 1%;
-	border-radius: 15px;
-}
-
-.ContentImg {
-	padding: 1%;
-	object-fit: contain;
-	width: 60%;
-	border-radius: 15px;
-}
-
 .ContentText {
 	text-align: left;
 	margin: 0 auto;
-	width: 90%
+	width: 90%;
+}
+
+.ContentGrid {
+	display: flex;
+	grid-template-columns: 2;
+}
+
+.ContentGrid-Child{
+	position: relative;
 }
 
 
