@@ -7,7 +7,7 @@
 </head>
 
 <body> 
-	<div class = "Hero">
+	<!-- <div class = "Hero">
 		
 		<div class="IntroBox">
 			<div class="IntroBoxBackground">
@@ -20,57 +20,59 @@
 			</div>
 		</div>
 	</div>
-	<br>
-	<div>
-		<div class="InfoBoxParent">
-			<div class="InfoBoxChild-Right">
-				<img class ="InfoBoxChild-Img" src = "Photos/Joshua.png">
-			</div>
-			<div class="InfoBoxChild-Left">
-				Howdy!<br> 
-				I’m Joshua, a computer engineer specializing in hardware design
-					- Embedded Systems, FPGAs, Software Design.
-				I look to use my knowledge of computers to bring projects that 
-				span several disciplines to life. 
-			</div>
-	
-			
-		</div>
-	</div>
+	<br> -->
+  <div class="TheAllBox"> 
+    <div>
+      <div class="InfoBoxParent">
+        <div class="InfoBoxChild-Right">
+          <img class ="InfoBoxChild-Img" src = "Photos/Joshua.png">
+        </div>
+        <div class="InfoBoxChild-Left">
+          Howdy!<br> 
+          I’m Joshua, a computer engineer specializing in hardware design
+            - Embedded Systems, FPGAs, Software Design.
+          I look to use my knowledge of computers to bring projects that 
+          span several disciplines to life. 
+        </div>
+    
+        
+      </div>
+    </div>
 
-	<!-- Portfolio Section -->
+    <!-- Portfolio Section -->
 
-	<div class = "PortfolioSection">
-		<div class="PortfolioContainer">
-			<a href="MeshRepeater">
-				<div class="PortfolioCard">
-					<img src="Photos/MeshRepeater2.jpg" class = "PortfolioImg">
-					<div class = "PortfolioCardText">Howdy</div>
-				</div>
-			</a>
-			<div class="PortfolioCard">
-				<img src="Photos/Capture.PNG" class="PortfolioImg">
-			</div>
-			<div class ="PortfolioCard">
-				<img src="Photos/cat.jpg" class="PortfolioImg">
-			</div>
-		
-		</div>
-	</div>
+    <div class = "PortfolioSection">
+      <div class="PortfolioContainer">
+        <a href="MeshRepeater">
+          <div class="PortfolioCard">
+            <img src="Photos/MeshRepeater2.jpg" class = "PortfolioImg">
+            <div class = "PortfolioCardText">Meshtastic Repeater Project</div>
+          </div>
+        </a>
+        <div class="PortfolioCard">
+          <img src="Photos/Capture.PNG" class="PortfolioImg">
+          <div class="PortfolioCardText">Test Text!</div>
+        </div>
+        <div class ="PortfolioCard">
+          <img src="Photos/cat.jpg" class="PortfolioImg">
+        </div>
+      
+      </div>
+    </div>
 
-	<div id="debug-width"></div>
+    <div id="debug-width"></div>
 
-	<script>
-		const debugBox = document.getElementById('debug-width');
-		let width = window.innerWidth;
+    <script>
+      const debugBox = document.getElementById('debug-width');
+      let width = window.innerWidth;
 
-		function updateWidth() {
-			debugBox.textContent = 'Width: ' + width + "px";
-		}
+      function updateWidth() {
+        debugBox.textContent = 'Width: ' + width + "px";
+      }
 
-		updateWidth();
-		window.addEventListener('resize', updateWidth);
-	</script>
-
+      updateWidth();
+      window.addEventListener('resize', updateWidth);
+    </script>
+  </div> <!--All Box end -->
 </body>
 </html>

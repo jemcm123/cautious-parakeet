@@ -47,7 +47,14 @@ body {
 	background-repeat: no-repeat;
 }
 
+.TheAllBox {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
 .IntroBox {
+  max-width: 400px;
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
@@ -129,7 +136,7 @@ body {
 	width: 90%;
 	margin-left: 5%;
 	margin-right: 5%;
-	background-color: forestgreen;
+	background-color: maroon;
 	border-radius: 15px;
 	box-shadow: 2px 4px 8px #696969;
 	display: grid;
@@ -163,6 +170,10 @@ body {
 	padding: 0.5rem;
 	color: white;
 	text-align: center;
+  font-size: 20;
+  font-weight: bold;
+  background-color: black;
+  border-radius: 15px;
 }
 
 /*Portfolio Card Tags*/ 
