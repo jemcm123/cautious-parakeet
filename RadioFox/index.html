@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Radio Fox Project </title>
+	<link id="mainStyleSheet" rel="stylesheet" href="../CSS-files/DayBloom.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body> 
+
+    <div class = "CenterContainer">
+		<div class="ContentTitle">Radio Fox Box</div>
+		<div class="ContentDate">1/23/2025</div>
+		<img src="Photos/RadioFoxCircuit.jpg" class="ContentMainImg">
+		<div class="ContentText">
+			I am a part of the <a href="https://w5ac.tamu.edu/">W5AC</a> radio club here at A&M, and we have weekly events where we go out 
+			"Fox hunting" which is the sport of tracking down (hunting) a transmitter that goes off every 
+			few minutes. This is one of my favorite activities in Amature Radio, and I would have gotten 
+			my license sooner if I knew about it.
+			<br>
+			 I wanted to build my own radio fox. The fox the club uses is a simple UV-5R (the same radio I use)
+			  attached to a Raspberry Pi running a script. It is set to play a random "wheatley" quotes from the 
+			  game "Portal 2". So I decided to mimic these functionalities. What got me into the idea of actually 
+			  building my own was me wanting to mix my hobbies together by getting my arduino to control my radio.
+			<br>
+			So I first checked to see if anyone else has done it, and they did! I got the basic circuit diagram and 
+			code from: <a href="http://w1rcp.com/2022/05/17/arduino-controlled-fox-transmitter/">Arduino Controlled Fox Transmitter W1RCP Ham Radio Gear</a>.
+			However, this only showed me how to connect the arduino to the radio and some basic code structure 
+			since this design only transmitted morse code. I did end up keeping a lot of the original code since
+			I needed to transmit my callsign in morse code at the end of each transmission.
+			<br>
+			This left me to figure out how to transmit actual audio on my own. To connect my radio to the arduino I 
+			would need to sacrifice the earpiece cable the radio came with. This cable allows for audio in/out and PTT 
+			(transmit button) I wanted mine to be a lot like the clubs, so I wanted to transmit audio clips of Cave 
+			Johnson from the same game. To do this I would need an SD card reader. I read online about how to use it to 
+			play audio. So I hooked up the arduino, reader, and a speaker to be able to play some songs. Here's the 
+			library for the reader: <a href="https://www.arduino.cc/reference/en/libraries/sd/">SD - Arduino Reference</a>.
+			<br>
+			A good amount of tinkering and testing later, I had a working Fox box on a breadboard, however, I need something 
+			a bit more permanent. So I grabbed some perf boards and my soldering iron and made it into a circuit board. Got it 
+			to work the first try too! I then printed out a bracket for it and put it in a water proof box. 
+			Unfortunately, I haven't field tested it yet. My one attempt, I ended up forgetting the battery and reversing the 
+			polarity when trying attempting to use a different battery frying the arduino. This has led me to installing a diode 
+			onto the circuit to prevent it from happening again, although this does decrease the battery life of the device itself. 
+		</div>
+		
+		<div class="ContentGrid">
+			<div class="ContentGrid-Child">
+				<div class = "ContentImg">
+					<img src = "Photos/RadioFoxBox.jpg" class="ContentImg">
+				</div>
+			</div>
+			<div class="ContentGrid-Child">
+				<img src = "Photos/RadioFoxCircuit.jpg" class="ContentImg">
+			</div>
+			<div class="ContentGrid-Child">
+				<img src = "Photos/RadioFoxTest.jpg" class="ContentImg">
+		</div>
+	</div>
+
+
+	</div>
+	
+
+
+</body>
+</html>

@@ -107,7 +107,6 @@ body {
 .InfoBoxChild-Left {
 	text-align: left;
 	padding: 1rem;
-	max-width: 600px;
 
 }
 
@@ -155,6 +154,12 @@ body {
 	border-radius: 15px;
 	overflow: hidden;
 	cursor: pointer;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.PortfolioCard:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
 }
 
 .PortfolioImg {
@@ -163,6 +168,11 @@ body {
 	object-fit: cover;
 	border-radius: 15px;
 	display: block;
+	transition: transform 0.3s ease;
+}
+
+.PortfolioCard:hover .PortfolioImg {
+	transform: scale(1.05);
 }
 
 .PortfolioCardText {
@@ -173,13 +183,12 @@ body {
 	padding: 0.5rem;
 	color: white;
 	text-align: center;
-  font-size: 20;
-  font-weight: bold;
-  background-color: black;
-  border-radius: 15px;
+	font-size: 1.1rem;
+	font-weight: bold;
+	background-color: rgba(0, 0, 0, 0.75);
 }
 
-/*Portfolio Card Tags*/ 
+/* Portfolio Card Tags */
 
 .PortfolioTag-Green {
 	position: absolute;
@@ -193,11 +202,9 @@ body {
 	color: white;
 }
 
-
-
-@media (max-width: 700px){
+@media (max-width: 700px) {
 	.PortfolioContainer {
-		grid-template-columns: 1;
+		grid-template-columns: 1fr;
 	}
 }
 
@@ -205,42 +212,92 @@ body {
 
 .CenterContainer {
 	text-align: center;
-	padding: 128px;
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 64px 8%;
 	overflow: hidden;
+	font-family: Georgia, 'Times New Roman', serif;
 }
 
 .CenterContainer img {
-	aspect-ratio: 1/1;
+	border-radius: 15px;
+	box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.CenterContainer img:hover {
+	transform: scale(1.02);
+	box-shadow: 2px 6px 14px rgba(0, 0, 0, 0.35);
+}
+
+.ContentMainImg {
 	width: 100%;
+	max-height: 480px;
 	object-fit: cover;
+	margin-bottom: 2.5rem;
+}
+
+.ContentImg {
+	max-width: 100%;
+	max-height: 400px;
+	width: auto;
+	height: auto;
+	display: block;
+	margin: 0 auto;
 }
 
 .ContentTitle {
-	padding-top: 5%;
 	text-align: center;
-	font-size:xxx-large;
+	font-size: xxx-large;
+	letter-spacing: 0.5px;
+	margin-bottom: 0.25rem;
 }
 
 .ContentDate {
 	text-align: center;
-	font-size:large;
+	font-size: large;
+	color: #666;
+	margin-bottom: 2.5rem;
 }
 
 .ContentText {
 	text-align: left;
-	margin: 0 auto;
-	width: 90%;
+	width: 100%;
+	line-height: 1.6;
+	margin-bottom: 1.5rem;
+	font-size: larger;
 }
 
 .ContentGrid {
 	display: flex;
-	grid-template-columns: 2;
+	gap: 2rem;
+	align-items: flex-start;
+	margin-bottom: 2.5rem;
 }
 
-.ContentGrid-Child{
+.ContentGrid-Child {
 	position: relative;
+	flex: 1;
+	min-width: 0;
 }
 
+.ContentGrid-Child .ContentText {
+	margin-bottom: 0;
+}
+
+@media (max-width: 700px) {
+	.ContentGrid {
+		flex-direction: column;
+	}
+
+	.CenterContainer {
+		padding: 48px 5%;
+	}
+
+	.ContentMainImg {
+		max-height: 320px;
+	}
+}
 
 
 
